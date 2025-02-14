@@ -97,6 +97,7 @@ strong {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    filter: drop-shadow(0 0 15px rgb(158, 144, 240));
 
     animation: spin 3s linear infinite;
 }
@@ -128,4 +129,26 @@ h1 {
     font-size: 15pt;
     margin-right: 1rem;
     color: white;
+}
+
+.promocao {
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    background-color: #FF6347;
+    border-radius: 10px;
+    color: white;
+    font-size: 15pt;
+    margin-bottom: 15px;
+    animation: batendo 1s ease-in-out infinite;
+}
+
+
+@keyframes batendo {
+    from{
+        transform: scale(0.90);
+    }
+    to{
+        transform: scale(1.2);
+    }
 }
